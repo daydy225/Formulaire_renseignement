@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulaire Renseigement</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Developeurs Web et Mobile</h1>
+        <p id="description">
+          Nous souhaiterons avoir votre avis en vue repertorier
+          differents profils selon vos competences.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id=" name-label" for="name">Nom & Prenom</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Entrez votre nom & prenom"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id=" email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Entrez votre email"
+            required
+          />
+          <div class="form-group">
+            <label id=" number-label" for="number"
+              >Age <span class="clue">(facultative)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+              required
+            />
+          </div>
+          <div class="form-group">
+              <p>
+                  Quelle option decrit le mieux votre situation actuel?
+              </p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Choisir votre situation actuel</option>
+                <option value="student">Etudiant</option>
+                <option value="Full time job">Travailleur a temps plein</option>
+                <option value="Full time learner">Apprenant a temps plein</option>
+                <option value="Preferno">Vous Preferez ne rien dire</option>
+                <option value="other">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Quelle site avez vous deja visitez pour vous former?</p>
+            <label>
+                <input type="radio" name="user-site" class="input-radio" checked/>
+                FreeCodeCamp  
+            </label>
+            <label>
+                <input type="radio" name="user-site" class="input-radio"/>
+                Codecademy  
+            </label>
+            <label>
+                <input type="radio" name="user-site" class="input-radio"/>
+                 W3shool
+            </label>
+            <label>
+                <input type="radio" name="user-site" class="input-radio"/>
+                Mozilla MDN  
+            </label>
+          </div>
+          <div class="form-group">
+            <p>
+                Quelle est la meilleur caracteristique des sites que vous avez visite?
+            </p>
+          <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Choisir votre situation actuel</option>
+              <option value="Challenges">Les Defis</option>
+              <option value="Projects">Projects</option>
+              <option value="Community">Communaute</option>
+              <option value="Opensource">Opensource /option>
+              <option value="other">Autre</option>
+          </select>
+          <div class="form-group">
+            <p>
+              Que souhaiteriez cous comme amelioration?
+              <span class="clue">(Cochez les cases qui s'appliquent a votre choix )</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Projects Front-end </label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Projects Back-end</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+              />Data Visualization</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Defis</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="open-source-community"
+                type="checkbox"
+                class="input-checkbox"
+              />Communite Open Source </label
+            >
+             <label>
+               <input
+                name="prefer"
+                value="videos"
+                type="checkbox"
+                class="input-checkbox"
+              />Videos</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="city-meetups"
+                type="checkbox"
+                class="input-checkbox"
+              />Rencontre en ville</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="wiki"
+                type="checkbox"
+                class="input-checkbox"
+              />Wiki</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="forum"
+                type="checkbox"
+                class="input-checkbox"
+              />Forum</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="additional-courses"
+                type="checkbox"
+                class="input-checkbox"
+              />Cours Additionelle</label
+            >
+          </div>
+          <div class="form-group">
+            <p>Aviez vous des commentaires ou suggestion?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+      </form>
+    </div>
+  </body>
+</html>
